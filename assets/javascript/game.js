@@ -7,6 +7,7 @@ var wins = 0;
 var losses = 0;
 var remainingLetters = 10;
 var guessedLetters = [];
+var instructionText = document.getElementById("instructions");
 
 // puts it into HTML
 document.getElementById("win-text").innerHTML = "Wins: " + wins;
@@ -43,7 +44,7 @@ document.onkeyup = function(event) {
 
     if ((userChoice === computerChoice)) {
         wins++
-        alert("You won! Computer Choice: " + computerChoice);
+        alert("You won! The Computer was thinking of:  " + computerChoice);
         reset();
     }
     else {
@@ -58,6 +59,8 @@ document.onkeyup = function(event) {
         reset();
 
     }
+
+    instructionText.textContent = "";
 
     
     document.getElementById("win-text").innerHTML = "Wins: " + wins;

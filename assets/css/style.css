@@ -1,0 +1,26 @@
+body {
+    font-family: 'Baloo Bhaijaan', cursive;
+    background-image: url(../images/swirl_pattern.png)
+}
+
+h1 {
+    font-size: 50px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 30px;
+    color: blueviolet;
+    padding: 10px;
+}
+
+h4 {
+    font-size: 20px;
+    color: rgb(76, 151, 25);
+    padding: 10px;
+}
+
+p {
+    font-size: 15px;
+    padding: 10px;
+}
